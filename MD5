@@ -1,7 +1,8 @@
-40ed65be2c7e42bcaa52f5c5592f4fb8 *DESCRIPTION
+29104471fb1accc2112fb6fd6b0d9ba9 *ChangeLog
+d3b4599e190ee7c72e94ff33fbc3f195 *DESCRIPTION
 0883c2ed4454a620cf304f45f4edbf6d *NAMESPACE
 3f0fe6e27c8fa24735dd552c03de1f47 *R/RcppExports.R
-47ca8201060eeaf0c925f50002daf729 *R/helpFunctionsFilter.R
+06ec20ab79d1f2455165331ce3324e9b *R/helpFunctionsFilter.R
 67772a2fe83da81bfba8cc8dc9d8332b *R/lowpassFilter.R
 0f7fcc31a38ffe2365d721f7c7082151 *R/randomGeneration.R
 f5d6608b47fd8f846fab8ce0c40295c8 *inst/CITATION
@@ -18,7 +19,7 @@ d9c525082fc832eb9e8fa3120599dc85 *src/Filter.h
 8c88bab0fe78ccb3047266e0b4d47edd *src/FilterBessel.cpp
 338986798b5414d36957b5a0de8a05ec *src/FilterBessel.h
 2a6f9e9e044a78154d3cfda5936d6f48 *src/Makevars
-5407c9d0136e72380ae81bf5ed127c17 *src/RcppExports.cpp
+6396e8a3169569799fd8c341507bc2ce *src/RcppExports.cpp
 724bbaaf769f609a832336d1e136917d *src/choleskyDecomposition.cpp
 dee7bdbfa838ed3e6a060bc758c5a0fa *src/choleskyDecomposition.h
 e5db7292c5e942a965466a67593ad6b8 *src/init.c

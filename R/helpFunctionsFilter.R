@@ -29,7 +29,7 @@ getConvolutionPeak <- function(t, cp1, cp2, value, leftValue, rightValue, filter
 }
 
 getConvolution <- function(t, stepfun, filter, truncated = TRUE) {
-  sapply(t, function(s) {
+  ret <- sapply(t, function(s) {
     arguments <- s - c(stepfun$leftEnd[1], stepfun$rightEnd)
     if (truncated) {
       steps <- filter$truncatedStepfun(arguments)
@@ -38,4 +38,5 @@ getConvolution <- function(t, stepfun, filter, truncated = TRUE) {
     }
     sum(stepfun$value * (c(1, steps[-c(1, length(steps))]) - c(steps[-c(1, length(steps))], 0)))
   })
+  ret
 }

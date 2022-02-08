@@ -1,7 +1,7 @@
 Package: lowpassFilter
 Title: Lowpass Filtering
-Version: 1.0-0
-Authors@R: c(person("Pein", "Florian", role = c("aut", "cre"), email = "fpein@maths.cam.ac.uk"),
+Version: 1.0-1
+Authors@R: c(person("Pein", "Florian", role = c("aut", "cre"), email = "f.pein@lancaster.ac.uk"),
     person("Thomas", "Hotz", role = "ctb", email = "thomas.hotz@tu-ilmenau.de"),
     person("Inder", "Tecuapetla-Gómez", role = "ctb", email = "itecuapetla@conabio.gob.mx"))
 Depends: R (>= 3.0.0)
@@ -12,10 +12,10 @@ Description: Creates lowpass filters which are commonly used in ion channel reco
 License: GPL-3
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2020-06-06 10:57:18 UTC; fpein
+Packaged: 2022-01-27 11:50:29 UTC; pein
 Author: Pein Florian [aut, cre],
   Thomas Hotz [ctb],
   Inder Tecuapetla-Gómez [ctb]
-Maintainer: Pein Florian <fpein@maths.cam.ac.uk>
+Maintainer: Pein Florian <f.pein@lancaster.ac.uk>
 Repository: CRAN
-Date/Publication: 2020-06-09 15:00:02 UTC
+Date/Publication: 2022-02-08 15:40:02 UTC

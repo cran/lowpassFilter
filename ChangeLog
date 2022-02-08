@@ -1,0 +1,9 @@
+2022-01-27 Florian Pein, version 1.0-1
+
+  * new maintainer email adress
+  
+  * removed print() call in getConvolution()
+
+2020-06-09 Florian Pein, version 1.0-0
+
+  * initial version
