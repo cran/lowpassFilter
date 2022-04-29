@@ -50,7 +50,7 @@ double deconvolveJump(const NumericVector &grid, const NumericVector &observatio
       centeredObservations[i] = observations[i] - (leftValue * (1.0 - ad) + rightValue * ad);
     }
     
-    F77_CALL(dtbsv)(&uplo, &trans, &diag, &size, &bands, A, &ldA, centeredObservations, &incx);
+    F77_CALL(dtbsv)(&uplo, &trans, &diag, &size, &bands, A, &ldA, centeredObservations, &incx FCONE FCONE FCONE);
     
     costs = 0.0;
     for (unsigned int i = 0u; i < n; ++i) {
@@ -119,8 +119,8 @@ List deconvolvePeak(const NumericVector &gridLeft, const NumericVector &gridRigh
           weights[i] = adLeft - adRight;
         }
         
-        F77_CALL(dtbsv)(&uplo, &trans, &diag, &size, &bands, A, &ldA, centeredObservations, &incx);
-        F77_CALL(dtbsv)(&uplo, &trans, &diag, &size, &bands, A, &ldA, weights, &incx);
+        F77_CALL(dtbsv)(&uplo, &trans, &diag, &size, &bands, A, &ldA, centeredObservations, &incx FCONE FCONE FCONE);
+        F77_CALL(dtbsv)(&uplo, &trans, &diag, &size, &bands, A, &ldA, weights, &incx FCONE FCONE FCONE);
         
         double numerator = 0.0, denominator = 0.0, sumCenteredObservationsSquared = 0.0;
         for (unsigned int i = 0u; i < n; ++i) {

@@ -1,3 +1,7 @@
+2022-04-29 Florian Pein, version 1.0-2
+
+  * added FCONE's in Deconvolution.cpp and choleskyDecomposition.cpp to deal with  USE_FC_LEN_T being set (required for R-4.2.0)
+
 2022-01-27 Florian Pein, version 1.0-1
 
   * new maintainer email adress

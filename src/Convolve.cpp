@@ -27,7 +27,7 @@ NumericVector convolveOversampling(const NumericVector &val, const NumericVector
   
   for (unsigned int i = 0u; i < n; ++i) {
     ret[i] = 0.0;
-    for (int j = 0u, k = i * factor + m - 1u; j < m; ++j, --k) {
+    for (int j = 0u, k = i * factor + m - 1u; j < static_cast<int>(m); ++j, --k) {
       ret[i] += val[k] * kern[j];
     }
   }
